@@ -1,0 +1,15 @@
+sonata_admin:
+    title: 'Obmeno Admin'
+    title_logo: img/logo_small.png
+    show_mosaic_button: false
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: left }
+    assets:
+        extra_stylesheets:
+            - bundles/sonatatranslation/css/sonata-translation.css
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]
